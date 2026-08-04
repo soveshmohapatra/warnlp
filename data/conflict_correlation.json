@@ -1,0 +1,580 @@
+{
+  "metadata": {
+    "acd_path": "/Users/sovesh/Documents/ComplexSystems/WAR-NLP/Working-NLP/Data/UCDP/UcdpPrioConflict_v25_1.csv",
+    "brd_path": "/Users/sovesh/Documents/ComplexSystems/WAR-NLP/Working-NLP/Data/UCDP/BattleDeaths_v25_1_conf.csv"
+  },
+  "A_global_overlay": {
+    "OpenAlex": {
+      "T2 Combined_vs_n_conflicts": {
+        "pearson_r": 0.7911,
+        "pearson_p": 0.0004438764837615632,
+        "spearman_rho": 0.861,
+        "spearman_p": 3.758574067841402e-05
+      },
+      "T2 Combined_vs_n_wars": {
+        "pearson_r": 0.4013,
+        "pearson_p": 0.13814089554381048,
+        "spearman_rho": 0.4457,
+        "spearman_p": 0.09594081457574007
+      },
+      "T2 Combined_vs_global_deaths": {
+        "pearson_r": 0.5779,
+        "pearson_p": 0.02405136601498212,
+        "spearman_rho": 0.7036,
+        "spearman_p": 0.0034243370890839554
+      },
+      "T3 Combined_vs_n_conflicts": {
+        "pearson_r": 0.7667,
+        "pearson_p": 0.0008547782747743037,
+        "spearman_rho": 0.9023,
+        "spearman_p": 4.225259560982517e-06
+      },
+      "T3 Combined_vs_n_wars": {
+        "pearson_r": 0.194,
+        "pearson_p": 0.48843703597023574,
+        "spearman_rho": 0.1815,
+        "spearman_p": 0.5174012248360111
+      },
+      "T3 Combined_vs_global_deaths": {
+        "pearson_r": 0.5637,
+        "pearson_p": 0.028619945456623722,
+        "spearman_rho": 0.5893,
+        "spearman_p": 0.020794358483161635
+      }
+    },
+    "PubMed": {
+      "T2 Combined_vs_n_conflicts": {
+        "pearson_r": 0.9068,
+        "pearson_p": 3.12600709684642e-06,
+        "spearman_rho": 0.7193,
+        "spearman_p": 0.002506755031338686
+      },
+      "T2 Combined_vs_n_wars": {
+        "pearson_r": 0.2545,
+        "pearson_p": 0.36003654340702634,
+        "spearman_rho": 0.0413,
+        "spearman_p": 0.8837266266907481
+      },
+      "T2 Combined_vs_global_deaths": {
+        "pearson_r": 0.481,
+        "pearson_p": 0.06951752111250172,
+        "spearman_rho": 0.3286,
+        "spearman_p": 0.23180969720615968
+      },
+      "T3 Combined_vs_n_conflicts": {
+        "pearson_r": 0.8171,
+        "pearson_p": 0.00020019964100699176,
+        "spearman_rho": 0.922,
+        "spearman_p": 1.0245721989466263e-06
+      },
+      "T3 Combined_vs_n_wars": {
+        "pearson_r": 0.3632,
+        "pearson_p": 0.18328677114332542,
+        "spearman_rho": 0.4061,
+        "spearman_p": 0.1330833473638148
+      },
+      "T3 Combined_vs_global_deaths": {
+        "pearson_r": 0.6477,
+        "pearson_p": 0.009029414430861443,
+        "spearman_rho": 0.7321,
+        "spearman_p": 0.0019129636009785611
+      }
+    }
+  },
+  "B_country_level": {
+    "conflict_countries": [
+      "China",
+      "Colombia",
+      "Egypt",
+      "India",
+      "Iran",
+      "Israel",
+      "Malaysia",
+      "Pakistan",
+      "Russia",
+      "Thailand",
+      "Turkey",
+      "Ukraine",
+      "United Kingdom",
+      "United States"
+    ],
+    "peaceful_countries": [
+      "Argentina",
+      "Australia",
+      "Austria",
+      "Belgium",
+      "Brazil",
+      "Canada",
+      "Chile",
+      "Czech Republic",
+      "Denmark",
+      "Finland",
+      "France",
+      "Germany",
+      "Greece",
+      "Ireland",
+      "Italy",
+      "Japan",
+      "Mexico",
+      "Netherlands",
+      "New Zealand",
+      "Norway",
+      "Poland",
+      "Portugal",
+      "Saudi Arabia",
+      "Singapore",
+      "South Africa",
+      "South Korea",
+      "Spain",
+      "Sweden",
+      "Switzerland",
+      "Taiwan"
+    ],
+    "OpenAlex": {
+      "conflict_mean_t2": 2.3412,
+      "peaceful_mean_t2": 2.4078,
+      "conflict_median_t2": 1.8568,
+      "peaceful_median_t2": 2.3313,
+      "mann_whitney_U": 46276.0,
+      "mann_whitney_p": 0.002905808070617839,
+      "cohens_d": -0.0592,
+      "n_conflict": 224,
+      "n_peaceful": 480
+    },
+    "PubMed": {
+      "conflict_mean_t2": 2.5126,
+      "peaceful_mean_t2": 2.4745,
+      "conflict_median_t2": 2.5073,
+      "peaceful_median_t2": 2.484,
+      "mann_whitney_U": 53809.5,
+      "mann_whitney_p": 0.9844453559329367,
+      "cohens_d": 0.0554,
+      "n_conflict": 224,
+      "n_peaceful": 480
+    }
+  },
+  "C_lag_analysis": {
+    "global_lags": {
+      "OpenAlex": {
+        "lag_0yr": {
+          "pearson_r": 0.5779,
+          "pearson_p": 0.02405136601498212,
+          "spearman_rho": 0.7036,
+          "spearman_p": 0.0034243370890839554,
+          "n_pairs": 15
+        },
+        "lag_1yr": {
+          "pearson_r": 0.6382,
+          "pearson_p": 0.010462803967739123,
+          "spearman_rho": 0.65,
+          "spearman_p": 0.008711583621912303,
+          "n_pairs": 15
+        },
+        "lag_2yr": {
+          "pearson_r": 0.7269,
+          "pearson_p": 0.003228746424996873,
+          "spearman_rho": 0.5516,
+          "spearman_p": 0.04084905835112289,
+          "n_pairs": 14
+        }
+      },
+      "PubMed": {
+        "lag_0yr": {
+          "pearson_r": 0.481,
+          "pearson_p": 0.06951752111250172,
+          "spearman_rho": 0.3286,
+          "spearman_p": 0.23180969720615968,
+          "n_pairs": 15
+        },
+        "lag_1yr": {
+          "pearson_r": 0.3674,
+          "pearson_p": 0.17794457459037638,
+          "spearman_rho": 0.1786,
+          "spearman_p": 0.5242843600465525,
+          "n_pairs": 15
+        },
+        "lag_2yr": {
+          "pearson_r": 0.3285,
+          "pearson_p": 0.25148579881154143,
+          "spearman_rho": 0.1692,
+          "spearman_p": 0.5630172739962107,
+          "n_pairs": 14
+        }
+      }
+    },
+    "case_studies": {
+      "Ukraine_OpenAlex": {
+        "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "t2_pct": [
+          0.5911,
+          0.689,
+          0.7188,
+          0.8758,
+          1.2796,
+          1.1617,
+          1.7726,
+          2.3126,
+          2.4245,
+          3.9273,
+          4.0997,
+          4.2454,
+          6.4691,
+          8.3513,
+          9.2133,
+          7.7257
+        ],
+        "battle_deaths": [
+          0,
+          0,
+          0,
+          0,
+          4895,
+          1890,
+          697,
+          447,
+          243,
+          311,
+          196,
+          208,
+          91545,
+          75180,
+          75686,
+          0
+        ],
+        "conflict_active": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "Ukraine_PubMed": {
+        "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "t2_pct": [
+          1.6949,
+          0.365,
+          1.4006,
+          1.1396,
+          0.4839,
+          0.7886,
+          2.171,
+          2.2695,
+          1.9526,
+          2.7251,
+          2.1965,
+          2.4885,
+          3.9827,
+          5.3987,
+          5.6667,
+          6.0818
+        ],
+        "battle_deaths": [
+          0,
+          0,
+          0,
+          0,
+          4895,
+          1890,
+          697,
+          447,
+          243,
+          311,
+          196,
+          208,
+          91545,
+          75180,
+          75686,
+          0
+        ],
+        "conflict_active": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "Israel_OpenAlex": {
+        "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "t2_pct": [
+          2.8621,
+          3.4483,
+          3.6169,
+          4.1494,
+          3.0755,
+          3.595,
+          4.1494,
+          3.9907,
+          4.0566,
+          4.0494,
+          4.5881,
+          4.3975,
+          4.8456,
+          5.0924,
+          4.8108,
+          5.8559
+        ],
+        "battle_deaths": [
+          27,
+          78,
+          235,
+          0,
+          2378,
+          0,
+          0,
+          0,
+          164,
+          188,
+          461,
+          435,
+          140,
+          26995,
+          26376,
+          0
+        ]
+      },
+      "Israel_PubMed": {
+        "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "t2_pct": [
+          2.7208,
+          2.1994,
+          2.6768,
+          2.553,
+          3.1068,
+          2.7445,
+          3.2399,
+          2.7513,
+          3.1983,
+          2.8863,
+          2.9464,
+          3.0733,
+          3.3407,
+          3.318,
+          3.152,
+          3.4926
+        ],
+        "battle_deaths": [
+          27,
+          78,
+          235,
+          0,
+          2378,
+          0,
+          0,
+          0,
+          164,
+          188,
+          461,
+          435,
+          140,
+          26995,
+          26376,
+          0
+        ]
+      },
+      "Turkey_OpenAlex": {
+        "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "t2_pct": [
+          1.4728,
+          1.0584,
+          1.7025,
+          1.7299,
+          1.304,
+          1.6895,
+          1.8843,
+          1.7619,
+          2.0928,
+          1.9071,
+          2.0421,
+          2.1432,
+          2.2529,
+          2.5813,
+          2.924,
+          2.8421
+        ],
+        "battle_deaths": [
+          355,
+          558,
+          853,
+          31,
+          0,
+          933,
+          2607,
+          1481,
+          921,
+          590,
+          412,
+          475,
+          748,
+          372,
+          209,
+          0
+        ]
+      },
+      "Turkey_PubMed": {
+        "years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "t2_pct": [
+          0.777,
+          1.3951,
+          1.3375,
+          1.6821,
+          1.7806,
+          2.0646,
+          2.1782,
+          2.3392,
+          2.268,
+          2.0777,
+          2.5126,
+          2.5233,
+          2.5396,
+          2.4083,
+          2.5124,
+          2.313
+        ],
+        "battle_deaths": [
+          355,
+          558,
+          853,
+          31,
+          0,
+          933,
+          2607,
+          1481,
+          921,
+          590,
+          412,
+          475,
+          748,
+          372,
+          209,
+          0
+        ]
+      }
+    }
+  }
+}
